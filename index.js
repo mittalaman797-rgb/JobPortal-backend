@@ -20,7 +20,11 @@ const corsOptions = {
      origin: "*",
      credentials: true
 }
-app.use(cors())
+app.use(cors(
+     {
+          origin:"*"
+     }
+))
     
 
      //  API
