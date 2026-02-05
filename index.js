@@ -11,19 +11,20 @@ dotenv.config()
 
 const app = express()
 
-
-//  MIDDLEWARE
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-app.use(cookieParser())
 const corsOptions = {
-     origin: "https://jobportal-frontend-34.onrender.com/",
+     origin: "https://jobportal-frontend-34.onrender.com",
      credentials: true
 }
 app.use(cors(
      corsOptions
 ))
     
+
+//  MIDDLEWARE
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(cookieParser())
+
 
      //  API
 
