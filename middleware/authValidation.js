@@ -39,6 +39,7 @@ export const signupValidation = (req, res, next) => {
 
 
 export const loginupValidation = (req, res, next) => {
+    console.log(req.body,"llll")
     const schema = joi.object({
 
         email: joi.string().email().required(),

@@ -10,7 +10,7 @@ import applicantRoutes from "./routes/applicationRoutes.js"
 dotenv.config()
 
 const app = express()
-
+// ["https://jobportal-frontend-34.onrender.com",
 const corsOptions = {
      origin: "https://jobportal-frontend-34.onrender.com",
      credentials: true
@@ -39,7 +39,7 @@ const fnc = async () => {
      try {
           await connectDB()
           app.listen(PORT, () => {
-               console.log("server started")
+               console.log("server started",PORT)
           })
 
      } catch (err) {
