@@ -11,7 +11,7 @@ dotenv.config()
 
 const app = express()
 // ["https://jobportal-frontend-34.onrender.com",
-const url="https://amazing-capybara-c5c6d9.netlify.app"
+const url="https://animated-quokka-d0f93a.netlify.app"
 const url2="http://localhost:5173";
 const corsOptions = {
      origin: url,
